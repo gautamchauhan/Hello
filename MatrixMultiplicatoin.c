@@ -2,7 +2,7 @@
  
 int main()
 {
-  int size, i, j, k, sum = 0;
+	int size, i, j, k, sum = 0;
   int first[10][10], second[10][10], multiply[10][10];
  
   printf("Enter the number of rows and columns of first matrix\n");
