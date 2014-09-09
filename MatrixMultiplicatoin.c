@@ -10,18 +10,22 @@ int main()
   printf("Enter the elements of first matrix\n");
  
   for (  i = 0 ; i < size ; i++ )
+  {
     for ( j = 0 ; j < size ; j++ )
     {
       scanf("%d", &first[i][j]);
     }
+  }
  
-    printf("Enter the elements of second matrix\n");
+  printf("Enter the elements of second matrix\n");
  
-    for ( i = 0 ; i < size ; i++ )
-      for ( j = 0 ; j < size ; j++ )
+  for ( i = 0 ; i < size ; i++ )
+  {
+  	for ( j = 0 ; j < size ; j++ )
       {
         scanf("%d", &second[i][j]);
       }
+  }
  
     for ( i = 0 ; i < size ; i++ )
     {
