@@ -1,9 +1,7 @@
 #include<iostream.h>
-#include<conio.h>
 
 void main()
 {
-	clrscr();
 	int a[100],n,i,item;
 	bool itemFound = true; //boolean variable
 
