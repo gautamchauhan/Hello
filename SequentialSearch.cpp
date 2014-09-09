@@ -1,5 +1,7 @@
 #include<iostream.h>
 
+//Sequnetial Search
+
 void main()
 {
 	int a[100],n,i,item;
