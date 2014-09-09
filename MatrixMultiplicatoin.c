@@ -21,10 +21,10 @@ int main()
  
   for ( i = 0 ; i < size ; i++ )
   {
-  	for ( j = 0 ; j < size ; j++ )
-      {
+   for ( j = 0 ; j < size ; j++ )
+   {
         scanf("%d", &second[i][j]);
-      }
+   }
   }
  
   for ( i = 0 ; i < size ; i++ )
@@ -35,9 +35,8 @@ int main()
       {
         sum = sum + first[i][k]*second[k][j];
       }
- 
-        multiply[i][j] = sum;
-        sum = 0;
+      multiply[i][j] = sum;
+      sum = 0;
     }
    }
  
@@ -46,7 +45,9 @@ int main()
     for ( i = 0 ; i < size ; i++ )
     {
       for ( j = 0 ; j < size ; j++ )
+      {
         printf("%d\t", multiply[i][j]);
+      }
  
       printf("\n");
     }
