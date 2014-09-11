@@ -5,14 +5,14 @@
 void main()
 {
 	clrscr();
-	int a[100],n,i,beg,end,mid,item;
+	int a[100],n,i,first,last,mid,item;
 
 	cout<<"\n------------ BINARY SEARCH ------------ \n\n";
 	cout<<"Enter No. of Elements= ";
 	cin>>n;
 
   	cout<<"\nEnter Elements in Sorted Order=\n";
-  	for(i=1;i<=n;i++)
+  	for(i=0;i<n;i++)
   	{
     		cin>>a[i];
   	}
@@ -20,19 +20,19 @@ void main()
   	cout<<"\nEnter Item you want to Search= ";
   	cin>>item;
 
-  	beg=1;
-  	end=n;
+  	first=0;
+  	last=n-1;
 
-  	mid=(beg+end)/2;                       // Find Mid Location of Array
+  	mid=(first+last)/2;                       // Find Mid Location of Array
 
-	while(beg<=end && a[mid]!=item)      // Compare Item and Value of Mid
+	while(first<=last && a[mid]!=item)      // Compare Item and Value of Mid
 	{
 		if(a[mid]<item)
-			beg=mid+1;
+			first=mid+1;
 		else
-			end=mid-1;
+			last=mid-1;
 
-		mid=(beg+end)/2;
+		mid=(first+last)/2;
 	}
 
 	if(a[mid]==item)
