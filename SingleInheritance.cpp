@@ -12,7 +12,7 @@ class Child: public Parent //"Child" is the Child or Derived class
 public:
 	void fun2 ()
 	{
-		cout<<"Inside Child Class";
+		cout<<"Inside Child Class"; 
 	}
 };
 
