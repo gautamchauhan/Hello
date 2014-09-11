@@ -1,40 +1,27 @@
-class Shape
+class Parent //"Parent" is the Parent or Base class
 {
-protected:
-	float width, height;
+
 public:
-	void set_data (float a, float b)
+	void fun1 ()
 	{
-		width = a;
-		height = b;
+		cout<<"Inside Parent Class";
 	}
 };
 
-class Rectangle: public Shape
+class Child: public Parent //"Child" is the Child or Derived class
 {
 public:
-	float area ()
+	void fun2 ()
 	{
-		return (width * height);
+		cout<<"Inside Child Class";
 	}
 };
 
-class Triangle: public Shape
-{
-public:
-	float area ()
-	{
-		return (width * height / 2);
-	}
-};
 
 int main ()
 {
-	Rectangle rect;
-	Triangle tri;
-	rect.set_data (5,3);
-	tri.set_data (2,5);
-	cout << rect.area() << endl;
-	cout << tri.area() << endl;
+	Child x;
+	x.fun1();
+	x.fun2();
 	return 0;
 }
