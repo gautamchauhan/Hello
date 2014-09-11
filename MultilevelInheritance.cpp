@@ -3,32 +3,38 @@ class A //A is the Parent of B
 public:
 	void fun1 ()
 	{
-		cout<<"Inside Parent Class";
+		cout<<"Inside Class A";
 	}
 };
 
-class B: public Parent //B is the Child A and Parent class of C
+class B: public A //B is the Child class of A and Parent class of C
 {
 public:
 	void fun2 ()
 	{
-		cout<<"Inside Child Class";
+		cout<<"Inside Class B";
 	}
 };
 
-class Child: public Parent //"Child" is the Child or Derived class
+class C: public B //C is the Child or Derived class of B
 {
 public:
-	void fun2 ()
+	void fun3 ()
 	{
-		cout<<"Inside Child Class";
+		cout<<"Inside Class C";
 	}
 };
 
 int main ()
 {
-	Child x;
+	C x;
 	x.fun1();
 	x.fun2();
+	x.fun3();
+	B y;
+	x.fun1();
+	x.fun2();
+	A z;
+	x.fun1();
 	return 0;
 }
