@@ -5,7 +5,7 @@
 void main()
 {
 	int a[100],n,i,item;
-	bool itemFound = true; //boolean variable
+	bool itemFound = false; //boolean variable
 
 	cout<<"\n------------ SEQUENTIAL SEARCH ------------ \n\n";
 	cout<<"Enter No. of Elements= ";
@@ -25,10 +25,7 @@ void main()
 		if(a[i]== item)
 		{
       			cout<<"\nData is Found at Location : "<<(i+1);
-		} 
-		else 
-		{
-			itemFound = false;
+      			itemFound = true;
 		}
 	}
 	if(itemFound == false)
