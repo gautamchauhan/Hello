@@ -1,6 +1,5 @@
 class Parent //"Parent" is the Parent or Base class
 {
-
 public:
 	void fun1 ()
 	{
@@ -16,7 +15,6 @@ public:
 		cout<<"Inside Child Class";
 	}
 };
-
 
 int main ()
 {
