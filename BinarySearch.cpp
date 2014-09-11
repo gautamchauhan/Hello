@@ -37,7 +37,7 @@ void main()
 
 	if(a[mid]==item)
 	{
-		cout<<"\nData is Found at Location : "<<mid;
+		cout<<"\nData is Found at Location : "<<mid+1;
 	}
 	else
 	{
