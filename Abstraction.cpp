@@ -20,7 +20,6 @@ void Area::getArea():
 
 int main()
 {
-
 	Area a;
 	a.setValue(5,7);
 	a.getArea();
