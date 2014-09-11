@@ -13,7 +13,7 @@ void Area::setValue(int width, int height)
 	y = height;
 }
 
-void Area::getArea():
+int Area::getArea():
 {
 	return (x*y);
 }
@@ -21,8 +21,9 @@ void Area::getArea():
 int main()
 {
 	Area a;
+	int result;
 	a.setValue(5,7);
-	a.getArea();
-	
+	result = a.getArea();
+	cout<<"Result is "<<result;
 	return 0;
 }
